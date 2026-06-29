@@ -176,6 +176,14 @@ ul {
   box-shadow: var(--shadow);
 }
 
+.panel-illustration {
+  display: block;
+  width: 100%;
+  margin-bottom: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .hero-panel h2 {
   margin-bottom: 18px;
   font-size: 1.45rem;
@@ -301,6 +309,29 @@ ul {
   text-transform: uppercase;
 }
 
+.card-icon {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+}
+
+.card-icon--light {
+  filter: brightness(1.03);
+}
+
+.card__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: rgba(155, 99, 56, 0.12);
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
 .feature-list {
   display: grid;
   gap: 14px;
@@ -320,9 +351,96 @@ ul {
   align-items: start;
 }
 
+.profile-aside {
+  display: grid;
+  gap: 18px;
+}
+
+.profile-figure,
+.profile-identity {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.profile-figure {
+  overflow: hidden;
+}
+
+.profile-figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+}
+
+.profile-identity {
+  padding: 24px 28px;
+}
+
+.profile-identity__role,
+.profile-identity__name {
+  color: var(--accent);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.profile-identity__role {
+  font-size: 0.8rem;
+}
+
+.profile-identity h2 {
+  margin-top: 10px;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: 2rem;
+}
+
+.profile-identity__name {
+  margin-top: 6px;
+  font-size: 0.88rem;
+}
+
+.profile-identity__company {
+  margin-top: 10px;
+  color: var(--ink-soft);
+}
+
 .stack-list {
   display: grid;
   gap: 16px;
+}
+
+.stack-list--with-visual {
+  align-content: start;
+}
+
+.placeholder-visual,
+.inline-visual,
+.section-visual {
+  margin: 0 0 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+}
+
+.placeholder-visual img,
+.inline-visual img,
+.section-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section-visual--wide {
+  margin-bottom: 24px;
+}
+
+.section-visual--card {
+  margin-bottom: 20px;
 }
 
 .stack-link {
@@ -463,6 +581,13 @@ ul {
   color: #fbf8f2;
   border-color: rgba(255, 247, 236, 0.3);
   background: rgba(255, 247, 236, 0.08);
+}
+
+.button--disabled {
+  color: var(--ink-soft);
+  background: rgba(31, 37, 41, 0.06);
+  border-color: rgba(31, 37, 41, 0.08);
+  cursor: default;
 }
 
 .site-footer {
