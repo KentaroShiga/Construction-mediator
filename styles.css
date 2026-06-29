@@ -394,6 +394,7 @@ ul {
 }
 
 .profile-figure {
+  position: relative;
   overflow: hidden;
 }
 
@@ -407,6 +408,18 @@ ul {
 
 .profile-identity {
   padding: 24px 28px;
+}
+
+.profile-identity--overlay {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  padding: 16px 18px;
+  border: 0;
+  background: linear-gradient(180deg, rgba(31, 37, 41, 0.16), rgba(31, 37, 41, 0.68));
+  box-shadow: none;
+  backdrop-filter: blur(10px);
 }
 
 .profile-identity__role,
@@ -426,6 +439,17 @@ ul {
   font-size: 2rem;
 }
 
+.profile-identity--overlay .profile-identity__role,
+.profile-identity--overlay .profile-identity__name {
+  color: rgba(248, 244, 236, 0.8);
+}
+
+.profile-identity--overlay h2 {
+  margin-top: 6px;
+  color: #fffaf3;
+  font-size: 1.5rem;
+}
+
 .profile-identity__name {
   margin-top: 6px;
   font-size: 0.88rem;
@@ -434,6 +458,11 @@ ul {
 .profile-identity__company {
   margin-top: 10px;
   color: var(--ink-soft);
+}
+
+.profile-identity--overlay .profile-identity__company {
+  margin-top: 6px;
+  color: rgba(248, 244, 236, 0.72);
 }
 
 .stack-list {
